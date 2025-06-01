@@ -140,6 +140,9 @@ $result = $conexao->query($sql);
                 </tbody>
             </table>
         </div>
+        <div class="footer">
+            <p>.</p>
+        </div>
 
 </body>
 <script>

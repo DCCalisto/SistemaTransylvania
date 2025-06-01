@@ -217,7 +217,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['salvar_frigobar'])) {
             <a href="Home.php" class="btn-voltar">Voltar para Início</a>
         </div>
     </section>
-
+            <div class="footer">
+            <p>.</p>
+        </div>
 </body>
 
 </html>

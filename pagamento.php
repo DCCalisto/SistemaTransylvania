@@ -200,5 +200,8 @@ if (isset($_POST['gerar_boleto'])) {
             <a href="Home.php" class="btn-voltar">Voltar para Início</a>
         </div>
     </form>
+    <div class="footer">
+            <p>.</p>
+        </div>
 </body>
 </html>

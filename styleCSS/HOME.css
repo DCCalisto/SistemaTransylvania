@@ -109,11 +109,11 @@ html {
 /* Logado */
 
 .bemVindo {
-  font-size: 1.5rem;
+  font-weight: 1000;
 }
 
 .bemVindo u {
-  color: var(--vermelho);
+  color: var(--primeira-color);
 }
 
 .bemVindo p {

@@ -37,6 +37,7 @@ $result = $conexao->query($sql);
 
 
 <body>
+    
     <header class="header">
         <a href="Home.php" class="logo">
             <img src="img/brasaoHT.png" alt="logo">
@@ -100,7 +101,9 @@ $result = $conexao->query($sql);
             <button class="btn3" onclick="filterRooms()">Filtrar</button>
         </div>
 
-
+        <div class="footer">
+            <p>.</p>
+        </div>
         
         
         <?php include 'card.php'; ?>

@@ -2,12 +2,16 @@
 
 :root {
   --primeira-color: #9b52bb ;
-  --segunda-color: #fcfbef ;
+  --segunda-color: #eff2fc ;
   --terceira-color:#141f2b ;
   --quarta-color:#6d6b7b ;
   --quinta-color:#b6bfc2 ;
   --branco: #ffffff ;
   --test-color: #ff0000;
+  --gradiente-top: linear-gradient(to top, #410346, #000000);
+  --gradiente-bottom: linear-gradient(to bottom, #410346, #000000);
+  --dourado: #ffe270;
+  --vermelho: #bd0000;
 }
 
 * {
@@ -34,7 +38,7 @@ html {
   left: 0;
   width: 100%;
   padding: 1rem 12% 1rem;
-  background: var(--branco);
+  background: var(--gradiente-top);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
@@ -54,11 +58,22 @@ html {
   transform: scale(1.1);
 }
 
+body{
+  background:#410346 ;
+  
+}
+.footer {
+  background: linear-gradient(to bottom, #410346, #000000);
+  color: var(--terceira-color);
+  padding: 300px 20px;
+  text-align: center;
+}
+
 /* Barra de navegação */
 
 .navbar a {
   font-size: 1.6rem;
-  color: var(--terceira-color);
+  color: var(--branco);
   margin: 2rem;
   font-weight: 500;
   transition: 0.3s ease;
@@ -68,8 +83,8 @@ html {
 
 .navbar a:hover,
 .navbar a.active {
-  color: var(--primeira-color);
-  border-bottom: 3px solid var(--primeira-color);
+  color: #97519c;
+  border-bottom: 3px solid #97519c;
 }
 
 .navbar-nav .navbar-item {
@@ -121,7 +136,7 @@ html {
 .bemVindo p {
   text-transform: uppercase;
   text-align: center;
-  color: var(--terceira-color);
+  color: var(--vermelho)
 }
 
 .buttonSair {

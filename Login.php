@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
 
-    <link rel="stylesheet" href="styleCSS/FORMULARIOS.css">
+    <link rel="stylesheet" href="styleCSS/Login.css">
 
 </head>
 
@@ -23,6 +23,7 @@
             <br><br>
             <input class="inputSubmit" type="submit" name="submit" value="Enviar">
     </div>
+    
     
 </body>
 

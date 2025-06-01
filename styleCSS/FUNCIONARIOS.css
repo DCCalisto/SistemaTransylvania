@@ -2,12 +2,16 @@
 
 :root {
   --primeira-color: #9b52bb ;
-  --segunda-color: #fcfbef ;
+  --segunda-color: #eff2fc ;
   --terceira-color:#141f2b ;
   --quarta-color:#6d6b7b ;
   --quinta-color:#b6bfc2 ;
   --branco: #ffffff ;
   --test-color: #ff0000;
+  --gradiente-top: linear-gradient(to top, #410346, #000000);
+  --gradiente-bottom: linear-gradient(to bottom, #410346, #000000);
+  --dourado: #ffe270;
+  --vermelho: #bd0000;
 }
 
 * {
@@ -26,6 +30,7 @@ html {
   overflow-x: hidden;
 }
 
+
 /* Barra de navegação */
 
 .header {
@@ -34,14 +39,13 @@ html {
   left: 0;
   width: 100%;
   padding: 1rem 12% 1rem;
-  background: var(--branco);
+  background: var(--gradiente-top);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 5;
 }
-
 /* Logo Site */
 
 .logo img {
@@ -50,15 +54,27 @@ html {
   cursor: default;
 }
 
+
 .logo:hover img {
   transform: scale(1.1);
 }
 
-/* Barra de navegação */
+body{
+  background:#410346 ;
+  
+}
+.footer {
+  background: linear-gradient(to bottom, #410346, #000000);
+  color: var(--terceira-color);
+  padding: 300px 20px;
+  text-align: center;
+}
+
+
 
 .navbar a {
   font-size: 1.6rem;
-  color: var(--terceira-color);
+  color: var(--branco);
   margin: 2rem;
   font-weight: 500;
   transition: 0.3s ease;
@@ -68,8 +84,8 @@ html {
 
 .navbar a:hover,
 .navbar a.active {
-  color: var(--primeira-color);
-  border-bottom: 3px solid var(--primeira-color);
+  color: #97519c;
+  border-bottom: 3px solid #97519c;
 }
 
 .navbar-nav .navbar-item {
@@ -121,7 +137,7 @@ html {
 .bemVindo p {
   text-transform: uppercase;
   text-align: center;
-  color: var(--terceira-color);
+  color: var(--vermelho)
 }
 
 .buttonSair {
@@ -199,34 +215,37 @@ a {
 .table {
   padding: 1.5rem;
   width: 100%; /* Largura total */
-  margin: 10px 0; /* Margem superior e inferior */
+  margin: 10px 70px; /* Margem superior e inferior */
 }
 
 .table-item {
-  width: 100%; /* Largura total */
-  border: 1px solid var(--segunda-color); /* Borda da tabela */
-  border-radius: 5px; /* Bordas arredondadas */
+  width: 90%; /* Largura total */
+  border: 3px solid var(--segunda-color); /* Borda da tabela */
+  border-radius: 10px; /* Bordas arredondadas */
   overflow: hidden; /* Garante bordas arredondadas */
 }
 
 .table-item thead {
-  background-color: var(--terceira-color); /* Cor de fundo do cabeçalho */
+  background-color: rgb(54, 14, 54); /* Cor de fundo do cabeçalho */
   color: var(--segunda-color); /* Cor do texto do cabeçalho */
   letter-spacing: 1px;
 }
+.table-item tbody{
+  color:white
+}
 
 .table-item th {
-  padding: 10px; /* Espaçamento interno */
+  padding: 5px; /* Espaçamento interno */
   text-align: left; /* Alinhamento do texto à esquerda */
-  border-bottom: 1px solid var(--segunda-color); /* Borda inferior nas células */
+  border-bottom: 1px solid var(--primeira-color); /* Borda inferior nas células */
 }
 
 .table-item tr:hover {
-  background-color: var(--quinta-color); /* Cor de fundo ao passar o mouse sobre a linha */
+  background-color: rgb(54, 14, 54); /* Cor de fundo ao passar o mouse sobre a linha */
 }
 
 .table-item tr {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .btn1, .btn2 {
@@ -238,6 +257,7 @@ a {
   border-radius: 5px; /* Bordas arredondadas */
   cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
   transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+  margin-bottom: 5px;
 }
 
 .btn1 {
@@ -252,7 +272,7 @@ a {
 .btn2 {
   background-color: #dc3545; /* Cor de fundo do botão de exclusão */
   color: white; /* Cor do texto do botão de exclusão */
-  margin-left: 5px; /* Espaço entre os botões */
+  margin-bottom: 10px;
 }
 
 .btn2:hover {

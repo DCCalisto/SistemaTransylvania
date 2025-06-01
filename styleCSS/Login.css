@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primeira-color: #9b52bb ;
+  --segunda-color: #eff2fc ;
+  --terceira-color:#141f2b ;
+  --quarta-color:#6d6b7b ;
+  --quinta-color:#b6bfc2 ;
+  --branco: #ffffff ;
+  --test-color: #ff0000;
+  --gradiente-top: linear-gradient(to top, #410346, #000000);
+  --gradiente-bottom: linear-gradient(to bottom, #410346, #000000);
+  --dourado: #ffe270;
+  --vermelho: #bd0000;
+}
+
+body {
+  background: #2a052c;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.tela-login {
+    background-color: #ffffff; /* Cor de fundo do formulário */
+    padding: 30px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor do formulário */
+    text-align: center; /* Centraliza texto dentro do formulário */
+    width: 300px; /* Largura do formulário */
+    border: 4px solid var(--terceira-color); /* Borda da tabela */
+    
+}
+
+.logoLogin {
+    max-width: 100%; /* Faz com que a imagem se ajuste ao tamanho do contêiner */
+    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+}
+
+/* INPUT PADRÃO */
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid var(--primeira-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: var(--segunda-color);
+  color: var(--terceira-color);
+  transition: 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: var(--primeira-color);
+  outline: none;
+  box-shadow: 0 0 5px var(--primeira-color);
+}
+
+/* BOTÃO DE ENVIO */
+.inputSubmit {
+  width: 90%;
+  padding: 8px;
+  background: #410346;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.inputSubmit:hover {
+  background: #7c42a0;
+  transform: scale(1.02);
+}

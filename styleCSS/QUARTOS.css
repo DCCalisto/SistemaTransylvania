@@ -2,12 +2,16 @@
 
 :root {
   --primeira-color: #9b52bb ;
-  --segunda-color: #fcfbef ;
+  --segunda-color: #eff2fc ;
   --terceira-color:#141f2b ;
   --quarta-color:#6d6b7b ;
   --quinta-color:#b6bfc2 ;
   --branco: #ffffff ;
   --test-color: #ff0000;
+  --gradiente-top: linear-gradient(to top, #410346, #000000);
+  --gradiente-bottom: linear-gradient(to bottom, #410346, #000000);
+  --dourado: #ffe270;
+  --vermelho: #bd0000;
 }
 
 * {
@@ -40,10 +44,21 @@ html {
   justify-content: space-between;
   align-items: center;
   z-index: 5;
+  background: var(--gradiente-top);
 }
 
 /* Logo Site */
-
+body{
+  background:#410346 ;
+  
+}
+.footer{
+  background: var(--gradiente-bottom);
+  background-color: #333;
+  color: rgb(66, 2, 66);
+  padding: 100px;
+  text-align: center;
+}
 .logo img {
   width: 110px;
   height: 110px;
@@ -58,7 +73,7 @@ html {
 
 .navbar a {
   font-size: 1.6rem;
-  color: var(--terceira-color);
+  color: var(--branco);
   margin: 2rem;
   font-weight: 500;
   transition: 0.3s ease;
@@ -68,8 +83,8 @@ html {
 
 .navbar a:hover,
 .navbar a.active {
-  color: var(--primeira-color);
-  border-bottom: 3px solid var(--primeira-color);
+  color: #97519c;
+  border-bottom: 3px solid #97519c;
 }
 
 .navbar-nav .navbar-item {
@@ -91,6 +106,7 @@ html {
   border: none;
   font-size: 1.5rem;
 }
+
 
 .btn {
   display: inline-block;
@@ -121,7 +137,7 @@ html {
 .bemVindo p {
   text-transform: uppercase;
   text-align: center;
-  color: var(--terceira-color);
+  color: var(--vermelho)
 }
 
 .buttonSair {
@@ -178,33 +194,47 @@ a {
   max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #410346;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
 }
 
 .table-item {
-  width: 100%;
-  border-collapse: collapse;
+  width: 100%; /* Largura total */
+  border: 3px solid var(--segunda-color); /* Borda da tabela */
+  border-radius: 10px; /* Bordas arredondadas */
+  overflow: hidden; /* Garante bordas arredondadas */
 }
 
 .table-item thead {
-  background-color: var(--terceira-color);
-  color: var(--segunda-color);
+  background-color: rgb(54, 14, 54); /* Cor de fundo do cabeçalho */
+  color: var(--segunda-color); /* Cor do texto do cabeçalho */
+  letter-spacing: 1px;
+}
+.table-item tbody{
+  color:white
 }
 
 .table-item th {
-  padding: 12px;
-  text-align: left;
+  padding: 5px; /* Espaçamento interno */
+  text-align: left; /* Alinhamento do texto à esquerda */
+  
+}
+.table-item tr:hover {
+  background-color: rgb(54, 14, 54); /* Cor de fundo ao passar o mouse sobre a linha */
+}
+
+.table-item tr {
+  font-size: 1.4rem;
 }
 
 .table-item td {
   padding: 10px;
-  border: 1px solid #dee2e6;
+  border: 1px solid #410346;
 }
 
 .table-item tbody tr:nth-child(even) {
-  background-color: #f8f9fa;
+  background-color: #410346;
 }
 
 .btn1, .btn2 {
