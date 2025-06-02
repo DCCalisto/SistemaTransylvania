@@ -140,6 +140,7 @@ $result = $conexao->query($sql);
                 </tbody>
             </table>
         </div>
+        
 
 </body>
 <script>
