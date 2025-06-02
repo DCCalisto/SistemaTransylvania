@@ -15,5 +15,5 @@ $conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 // }
 // else
 // {
-//     echo "Conexão efetuada com sucesso!";
+//     echlko "Conexão efetuada com sucesso!";
 // }
