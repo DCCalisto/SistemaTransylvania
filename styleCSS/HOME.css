@@ -33,7 +33,7 @@ html {
   width: 100%;
   padding: 1rem 12% 1rem;
   background: var(--gradiente-top);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -234,16 +234,17 @@ select {
 .rooms {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center; /* Centraliza os quartos */
+  gap: 20px;               /* Espaçamento entre eles */
+  padding: 2rem;
 }
 
 .room {
   background-color: var(--quinta-color);
   border: 1px solid var(--primeira-color);
   border-radius: 8px;
-  margin: 10px;
   padding: 15px;
-  width: calc(30% - 30px);
+  width: 300px; /* Tamanho fixo mais confiável */
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
 }
@@ -254,7 +255,8 @@ select {
 
 .room img {
   width: 100%;
-  height: auto;
+  height: 200px;
+  object-fit: cover; /* Garante corte elegante da imagem */
   border-radius: 5px;
 }
 
@@ -263,5 +265,18 @@ select {
   text-align: center;
   color: var(--terceira-color);
   cursor: default;
+  margin-top: 10px;
 }
 
+.card__details {
+  display: none;
+  background: #fff;
+  padding: 1rem;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card__details.open {
+  display: block;
+}

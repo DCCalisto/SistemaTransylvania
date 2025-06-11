@@ -104,8 +104,8 @@ $result = $conexao->query($sql);
         
         
         <?php include 'card.php'; ?>
-
-
+        
+            
 
 
        

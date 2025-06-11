@@ -197,18 +197,21 @@ a {
 /* Tabela */
 
 .table {
-  padding: 2rem;
-  width: 100%; /* Largura total */
-  margin: 20px 0; /* Margem superior e inferior */
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .table-item {
-  width: 100%; /* Largura total */
-  border: 1px solid var(--segunda-color); /* Borda da tabela */
-  border-radius: 5px; /* Bordas arredondadas */
-  overflow: hidden; /* Garante bordas arredondadas */
+  width: 100%;
+  border: 1px solid var(--quarta-color);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--segunda-color);
 }
-
 .table-item thead {
   background-color: var(--terceira-color); /* Cor de fundo do cabeçalho */
   color: var(--segunda-color); /* Cor do texto do cabeçalho */
@@ -230,14 +233,14 @@ a {
 }
 
 .btn1, .btn2 {
-  display: inline-flex; /* Alinha o ícone e o texto */
-  justify-items: center;
-  align-items: center; /* Centraliza verticalmente */
-  padding: 10%; /* Espaçamento interno do botão */
-  border: none; /* Sem borda */
-  border-radius: 5px; /* Bordas arredondadas */
-  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
-  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .btn1 {
