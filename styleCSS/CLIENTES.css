@@ -210,7 +210,6 @@ a {
   border: 1px solid var(--quarta-color);
   border-radius: 10px;
   overflow: hidden;
-  background-color: var(--segunda-color);
 }
 .table-item thead {
   background-color: var(--terceira-color); /* Cor de fundo do cabeçalho */
@@ -218,10 +217,11 @@ a {
   letter-spacing: 1px;
 }
 
-.table-item th {
-  padding: 10px; /* Espaçamento interno */
-  text-align: left; /* Alinhamento do texto à esquerda */
-  border-bottom: 1px solid var(--segunda-color); /* Borda inferior nas células */
+.table-item th,
+.table-item td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--quarta-color);
 }
 
 .table-item tr:hover {
