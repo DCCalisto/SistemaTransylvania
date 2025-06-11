@@ -26,11 +26,6 @@
       width: 100%;
       border-radius: 8px;
     }
-
-    .card__desc, .card__details {
-      margin-top: 1rem;
-    }
-
     .card__details {
       display: none;
     }
@@ -144,7 +139,7 @@
   <!-- ---------- CARD 2 ---------- -->
   <div class="wrapper">
     <figure class="card">
-      <img src="./img/house2.jpg" alt="Casa de campo" />
+      <img src="./img/house.jpg" alt="Casa de campo" />
       <figcaption class="card__cap">
         <h2>Casa de campo</h2>
         <div class="card__desc">
@@ -170,7 +165,7 @@
   <!-- ---------- CARD 3 ---------- -->
   <div class="wrapper">
     <figure class="card">
-      <img src="./img/house3.jpg" alt="Apartamento urbano" />
+      <img src="./img/house.jpg" alt="Apartamento urbano" />
       <figcaption class="card__cap">
         <h2>Apartamento urbano</h2>
         <div class="card__desc">
@@ -196,7 +191,7 @@
   <!-- ---------- CARD 4 ---------- -->
   <div class="wrapper">
     <figure class="card">
-      <img src="./img/house4.jpg" alt="Chalé na montanha" />
+      <img src="./img/house.jpg" alt="Chalé na montanha" />
       <figcaption class="card__cap">
         <h2>Chalé na montanha</h2>
         <div class="card__desc">
